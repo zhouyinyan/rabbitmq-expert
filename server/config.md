@@ -264,20 +264,20 @@ CONFIG_FILE=/etc/rabbitmq/testdir/bunnies
 shell环境变量具有最高优先级，会覆盖rabbitmq-env.conf中的配置，而rabbitmq-env.conf又会覆盖rabbitmq默认的内置配置。  
 
 正常情况下，你应该不太需要配置环境变量。如果你有特殊的需求，可以看看下面这些环境变量：  
-	RABBITMQ_NODE_IP_ADDRESS ：绑定的IP地址，默认空串，表示绑定所有网卡。
-	RABBITMQ_NODE_PORT ： 默认5672
-	RABBITMQ_DIST_PORT ： 节点间通讯端口和CLI工具通讯端口，默认RABBITMQ_NODE_PORT+20000
-	RABBITMQ_NODENAME ： 节点名，默认 Unix*: rabbit@$HOSTNAME Windows: rabbit@%COMPUTERNAME% 
-	RABBITMQ_CONFIG_FILE ： 主配置文件路径。
-	RABBITMQ_ADVANCED_CONFIG_FILE ：附加配置文件路径
-	RABBITMQ_CONF_ENV_FILE ： 环境变量配置文件路径
-	RABBITMQ_USE_LONGNAME ： 是否使用长名
-	RABBITMQ_SERVICENAME ： windows service：RabbitMQ
-	RABBITMQ_CONSOLE_LOG ： 
-	RABBITMQ_CTL_ERL_ARGS ：默认 none
-	RABBITMQ_SERVER_ERL_ARGS ： 
-	RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS ： 
-	RABBITMQ_SERVER_START_ARGS ： 默认 none
+	- RABBITMQ_NODE_IP_ADDRESS ：绑定的IP地址，默认空串，表示绑定所有网卡。
+	- RABBITMQ_NODE_PORT ： 默认5672
+	- RABBITMQ_DIST_PORT ： 节点间通讯端口和CLI工具通讯端口，默认RABBITMQ_NODE_PORT+20000
+	- RABBITMQ_NODENAME ： 节点名，默认 Unix*: rabbit@$HOSTNAME Windows: rabbit@%COMPUTERNAME% 
+	- RABBITMQ_CONFIG_FILE ： 主配置文件路径。
+	- RABBITMQ_ADVANCED_CONFIG_FILE ：附加配置文件路径
+	- RABBITMQ_CONF_ENV_FILE ： 环境变量配置文件路径
+	- RABBITMQ_USE_LONGNAME ： 是否使用长名
+	- RABBITMQ_SERVICENAME ： windows service：RabbitMQ
+	- RABBITMQ_CONSOLE_LOG ： 
+	- RABBITMQ_CTL_ERL_ARGS ：默认 none
+	- RABBITMQ_SERVER_ERL_ARGS ： 
+	- RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS ： 
+	- RABBITMQ_SERVER_START_ARGS ： 默认 none
 
 另外， 还有几个环境变量用来告诉rabbitmq 日志，插件，数据库等文件路径，在文件路径一文中详细介绍。  
 rabbitmq依赖的其他环境变量：
